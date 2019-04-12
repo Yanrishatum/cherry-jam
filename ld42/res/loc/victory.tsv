@@ -1,0 +1,32 @@
+gale	normal	center	We did it, comrades! We got the wicked sorceress!	У нас получилось! Мы победили злую колдунью!
+gale	normal	hide	#skip
+inori	normal	left	Yaaay.	Урааа.
+violette	anger	right	...so what now... are you going to kill me?.. or send me to prison?	...и что теперь... убьете меня?.. или отправите в тюрьму?
+inori	normal	hide	#skip
+gale	surprise	left	Eh? No, that would be rather awkward. Could you maybe, I don't know, rethink your evil ways or something?	А? Нет, это как-то неправильно. Может ты как бы, ну, обратишься на сторону света или вроде того?
+gale	surprise	hide	#skip
+ricard	normal	left	Yeah, just reflect a bit and we're fine. 	Ага, просто поразмышляй об этом на досуге, и расходимся.
+violette	anger	right	...couldn't we just talk like this from the beginning?	...неужели мы не могли сразу поговорить об этом?
+ricard	normal	hide	#skip
+gale	normal	left	Actually, yes. But then we woudn't get the chance to show off all these awesome spells we learned on our way here.	Могли, конечно. Но тогда у нас не было бы шанса опробовать всю эту обалденную магию, что мы выучили по пути.
+gale	normal	hide	#skip
+inori	normal	left	So refreshing! It's been a long time since we needed to cast more than one spell to win a battle.	Так бодрит! Сколько уже времени прошло с тех пор, как битвы стали заканчиваться после одного заклинания?
+violette	normal	hide	#skip
+ricard	rage	right	Tsk. This is why I could never impress fair maidens by realizing my full potential. All this firepower, pent up inside me!.. 	Пф. Поэтому славные девы не обращали на меня внимания. Меня буквально распирало от нерастраченной энергии!..
+inori	fright	left	I r-really don't think this is the main reason, Ricard.	Н-не думаю, что это основная причина, Рикард.
+ricard	rage	hide	#skip
+violette	normal	right	Haaah... What a lively bunch.	Хаа... ну и компания.
+inori	normal	hide	#skip
+gale	surprise	left	I know right? Pretty hard to keep them out of trouble when you're the only one level-headed in the squad. But, what if...	И не говори. Представь, как тяжело держать их в узде, когда ты единственный уравновешенный человек в отряде. А хотя...
+violette	blank	right	Oh no.	О нет.
+gale	normal	left	Say, are you perhaps interested in joining us? I mean, you're undeniably powerful, quite reasonable...	Слушай, как ты смотришь на то, чтобы присоединиться к нам? Я имею в виду, ты очень сильна, весьма благоразумна...
+violette	normal	right	Oh please no.	Нет, пожалуйста, нет.
+gale	normal	hide	#skip
+inori	normal	left	And your attack names give a really cool vibe!	И у твоих атак действительно крутые названия!
+violette	normal	right	No no no no no!	Нет нет нет нет нет!
+inori	normal	hide	#skip
+gale	normal	left	It's settled then! Welcome to the team, Violette. We look forward to working with you from here on!	Тогда дело решено! Добро пожаловать в команду, Виолетта. Надеемся на долгое и плодотворное сотрудничество!
+gale	normal	hide	#skip
+ricard	normal	left	Classic four member squad complete! Onward, to glory!	Классический боевой квартет собран! Вперед, за славой!
+ricard	normal	hide	#skip
+violette	blank	center	...but why?	...да как так-то?

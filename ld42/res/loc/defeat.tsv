@@ -1,0 +1,12 @@
+gale	normal	left	Impossible... we lost...	Невозможно... мы проиграли...
+violette	normal	right	What in the world were you even thinking? Get out of here, now, and don't ever come back.	Ну так о чем вы думали? Уходите уже отсюда, и не смейте возвращаться.
+gale	normal	left	We will return soon enough!	Мы еще покажем тебе!
+violette	anger	right	I just said—	Я же только что сказала—
+gale	normal	hide	#skip
+inori	normal	left	T-that's right, we can always try again!	Т-точно, мы всегда можем попытаться еще раз!
+inori	normal	hide	#skip
+ricard	normal	left	I need some... time to recharge, and... I can do it all night...	Мне нужно... восстановиться... и я могу делать это всю ночь...
+ricard	normal	hide	#skip
+gale	normal	left	Stay strong, my friends! It's a tactical retreat!	Не отчаивайтесь, друзья! Тактическое отступление!
+gale	normal	hide	#skip
+violette	blank	center	Oh my god, I need to move to another country.	Боже, пора переезжать в другую страну.

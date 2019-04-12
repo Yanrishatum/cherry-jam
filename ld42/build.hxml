@@ -1,0 +1,17 @@
+-cp src
+-lib heaps
+# -lib hlsdl
+-lib hldx
+# -lib gasm-heaps
+-cp vendor/gasm-heaps/src
+-cp vendor/msignal
+-lib gasm
+
+-lib structural
+
+-D windowSize=1280x720
+-D analyzer-optimize
+-D hl=true
+-D resourcesPath=res
+-main Main
+-hl ld42.hl

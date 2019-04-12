@@ -1,0 +1,18 @@
+gale	normal	center	This is it, my friends. Brace yourselves.	Вот мы и на месте, друзья. Мужайтесь.
+gale	normal	left	We've travelled far to reach you at last, villain! All those days, weeks, months of training weren't in vain. Prepare for battle!	Мы прошли немалый путь, чтобы сразиться с тобой, ведьма! Все эти месяцы тренировок не были напрасны! К бою!
+violette	normal	right	I've literally never seen you before. Who are you and what do you want from me?	Я вижу вас буквально впервые в жизни. Кто вы такие и что хотите от меня?
+gale	normal	left	We were chosen as paragons of truth! Exemplars of courage! Our mission is to exterminate all evil in this holy land.	Мы избранники судьбы! Несокрушимые воины веры! Наша миссия — очистить эти священные земли от всего зла.
+gale	normal	left	Inori the Virtuous Maiden. Ricard the Searing Ember. And I, Gale the Prancing Wolf, their valiant leader! 	Инори Воплощенная Добродетель. Рикард Тлеющее Пламя. И я, их отважный лидер, Гейл Гарцующий Волк!
+violette	blank	right	I am positively terrified.	Я в ужасе.
+gale	rage	left	Don't you dare mock me. I've reached power levels unimaginable to the human mind! I can now bind the weather itself to my will!	Не потешайся надо мной. Мои силы уже непостижимы для человеческого разума! Сама погода подчиняется моей воле!
+violette	normal	right	So you're the reason the weather forecasts never turn out right.	Так это из-за тебя метеопрогнозы никогда не сбываются.
+gale	normal	hide	#skip
+inori	normal	left	A-and I have obtained complete control over life and death. My p-prayers can make the forests wilt and the seas boil...	А-а я обрела полный контроль над жизнью и смертью. Мои м-молитвы заставляют увядать леса и вскипать океаны...
+violette	normal	right	This sounds really harmful to the ecosystem.	Похоже на серьезный удар по экосистеме.
+inori	normal	hide	#skip
+ricard	normal	left	Bah, child's play! I'm the best in terms of raw power. I can raise and crush mountains by the flick of my finger!	Все это баловство! В плане чистой мощи мне нет равных. Я могу вздымать и разрушать скалы по щелчку пальцев!
+violette	normal	right	The mining industry calls for you, I guess.	Горнодобывающая промышленность нуждается в тебе.
+ricard	rage	left	Wait, are you picking on me?	Погоди, ты это сейчас на что намекаешь?
+ricard	rage	hide	#skip
+violette	normal	hide	#skip
+gale	rage	center	Arrgh! Enough talk! Have at you, evil incarnate!	Арргх! Хватит разговоров! Получай, воплощение зла!

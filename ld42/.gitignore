@@ -1,0 +1,5 @@
+out_c/
+.vscode/
+bin/bin.zip
+bin/ld42.js
+res_test/

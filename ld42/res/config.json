@@ -1,0 +1,97 @@
+{
+  "map_index": ["Forest", "Water", "Plains", "Mountains", "Wastelands"],
+  "map": [
+    "0 1 1 1 1 1 0 0",
+    "0 3 1 1 3 3 0 0",
+    "3 3 3 1 1 1 3 3",
+    "3 2 2 2 2 2 3 3",
+    "3 0 2 4 4 2 2 3",
+    "0 2 4 4 4 2 3 0",
+    "0 0 2 2 4 2 2 0",
+    "0 0 2 2 2 0 0 0"
+  ],
+  "stats":
+  {
+    "gale": { "hp": 9999, "atk": 1, "atb": 4, "spells": ["tempest_howl", "raging_hurricane", "deadly_avalanche", "earth_agony"], "x": -3, "y": 0 },
+    "inori": { "hp": 9999, "atk": 1, "atb": 3, "spells": ["angels_touch", "second_sunrise", "sea_dragon_breath", "boiling_oceans"], "x": -3, "y": 3 },
+    "ricard": { "hp": 9999, "atk": 2, "atb": 5, "spells": ["meteor_strike", "scourge_of_kings", "volcanic_eruption", "fire_god_wrath"], "x": -3, "y": 6 },
+    "boss": { "hp": 999999, "atk": 0, "atb": 2.8, "spells": ["blood_offering", "bone_crusher", "soul_rend", "abyssal_whisper", "treacherous_gaze", "tower_of_sin"], "ai": true, "x": 11, "y": 4 }
+  },
+  "spells":
+  [
+    {
+      "id": "tempest_howl",      "type": "Plains", "damage": 2.5, "cost": "plain_tile_2x1",
+      "target": "boss",          "extra_tiles": [0], "extra_action":"#swap:Wastelands"
+    },
+    {
+      "id": "raging_hurricane",  "type": "Plains", "damage": 7.5, "cost": "plain_tile_2x2",
+      "target": "boss",          "extra_tiles": [0,1,[0,1]], "extra_action":"#swap:Wastelands"
+    },
+    {
+      "id": "deadly_avalanche",  "type": "Mountains", "damage": 2.5, "cost": "mountains_tile_2x1",
+      "target": "boss",          "extra_tiles": [0]
+    },
+    {
+      "id": "earth_agony",       "type": "Mountains", "damage": 5, "cost": "mountains_tile_3x1",
+      "target": "boss",          "extra_tiles": [0, [0,0]]
+    },
+    
+    {
+      "id": "angels_touch",      "type": "Forest", "damage": -40, "cost": "forest_tile_1x1",
+      "target": "party",         "extra_tiles": [], "extra_action":"#swap:Wastelands"
+    },
+    {
+      "id": "second_sunrise",    "type": "Forest", "damage": -30, "cost": "forest_tile_2x2",
+      "target": "party_all",     "extra_tiles": [0,1,[0,1]], "extra_action":"#swap:Wastelands"
+    },
+    {
+      "id": "sea_dragon_breath", "type": "Water", "damage": 2.5, "cost": "water_tile_2x1",
+      "target": "boss",          "extra_tiles": [0]
+    },
+    {
+      "id": "boiling_oceans", "type": "Water", "damage": 7.5, "cost": "water_tile_2x2",
+      "target": "boss", "extra_tiles": [0, 1, [0,1]]
+    },
+    
+    {
+      "id": "meteor_strike", "type": "Wastelands", "damage": 2.5, "cost": "wastelands_tile_2x1",
+      "target": "boss", "extra_tiles": [0]
+    },
+    {
+      "id": "scourge_of_kings", "type": "Wastelands", "damage": 5, "cost": "wastelands_tile_3x1",
+      "target": "boss", "extra_tiles": [0, [0, 0]]
+    },
+    {
+      "id": "volcanic_eruption", "type": "Wastelands", "damage": 7.5, "cost": "wastelands_tile_2x2",
+      "target": "boss", "extra_tiles": [0, 1, [0, 1]]
+    },
+    {
+      "id": "fire_god_wrath", "type": "Wastelands", "damage": 10, "cost": "wastelands_tile_5x",
+      "target": "boss", "extra_tiles": [0, 1, 2, 3]
+    },
+    {
+      "id": "blood_offering", "type": "AI", "damage": 10, "cooldown": 1,
+      "target": "party_random", "count": 1, "start": 0
+    },
+    {
+      "id": "bone_crusher", "type": "AI", "damage": 20, "cooldown": 2,
+      "target": "party_random", "count": 1, "start": 0
+    },
+    {
+      "id": "soul_rend", "type": "AI", "damage": 50, "cooldown": 3,
+      "target": "party_random", "count": 1, "start": 3
+    },
+    {
+      "id": "abyssal_whisper", "type": "AI", "damage": 15, "cooldown": 2,
+      "target": "party_random", "count": 2, "start": 0
+    },
+    {
+      "id": "treacherous_gaze", "type": "AI", "damage": 25, "cooldown": 3,
+      "target": "party_random", "count": 2, "start": 0
+    },
+    {
+      "id": "tower_of_sin", "type": "AI", "damage": 40, "cooldown": 6,
+      "target": "party_random", "count": 3, "start": 8
+    }
+  ]
+}

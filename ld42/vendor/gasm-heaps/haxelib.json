@@ -1,0 +1,22 @@
+{
+	"name": "gasm-heaps",
+	"license": "MIT",
+	"tags": [
+		"ecs",
+		"framework",
+		"heaps"
+	],
+	"classPath": "src",
+	"description": "Heaps integration for GASM ECS framework.",
+	"contributors": [
+		"leo.bergman"
+	],
+	"releasenote": "",
+	"version": "1.2.0",
+	"url": "https://github.com/lbergman/gasm-heaps",
+	 "dependencies": {
+	    "heaps": "",
+	    "gasm": "",
+	    "msignal": ""
+	  }
+}

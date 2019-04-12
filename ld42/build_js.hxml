@@ -1,0 +1,16 @@
+-cp src
+-lib heaps
+# -lib gasm-heaps
+-cp vendor/gasm-heaps/src
+-cp vendor/msignal
+-lib gasm
+
+-lib structural
+
+-D analyzer-optimize
+
+-D resourcesPath=res
+-D debug_mode
+-D js=true
+-main Main
+--js bin/ld42.js
