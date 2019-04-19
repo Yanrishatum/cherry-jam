@@ -3,9 +3,9 @@
 # -lib hlsdl
 -lib hldx
 # -lib gasm-heaps
+-cp vendor/gasm/src
 -cp vendor/gasm-heaps/src
 -cp vendor/msignal
--lib gasm
 
 -lib structural
 
