@@ -12,7 +12,7 @@ I literally started learning Heaps around a month before doing this, however I d
 * Other libraries that can be downloaded from `haxelib`: 
 ```
 format: latest
-structural: latest?
+structural: https://github.com/underscorediscovery/structural
 gasm: 1.4.1
   actuate: 1.8.7 (I think I fixed it for Haxe4)
   buddy: 2.8.5
