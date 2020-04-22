@@ -1,0 +1,8 @@
+-D resourcesPath=D:/Dropbox/Syncthing/LudumDare/LD45/res
+-D windowSize=1280x720
+-lib format-tiled
+-lib heeps
+-lib yatl
+-cp src
+-D analyzer-optimize
+-main Main

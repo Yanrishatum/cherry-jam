@@ -1,0 +1,10 @@
+-lib heeps
+-lib differ
+-lib castle
+-lib format-tiled
+-D heeps_disable_patch_h2d_layers
+# -D heeps_disable_patch
+-cp src
+# -D analyzer-optimize
+-D resourcesPath=D:/Dropbox/Syncthing/LudumDare/LD44/res
+-main Main

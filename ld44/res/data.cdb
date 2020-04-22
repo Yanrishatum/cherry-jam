@@ -1,0 +1,31 @@
+{
+	"sheets": [
+		{
+			"name": "test",
+			"columns": [
+				{
+					"typeStr": "16",
+					"name": "d"
+				},
+				{
+					"typeStr": "7",
+					"name": "i"
+				},
+				{
+					"typeStr": "13",
+					"name": "f"
+				}
+			],
+			"lines": [
+				{
+					"f": "C:/_work/2020/pk/res/credits/logo.png",
+					"i": ""
+				}
+			],
+			"separators": [],
+			"props": {}
+		}
+	],
+	"customTypes": [],
+	"compress": false
+}

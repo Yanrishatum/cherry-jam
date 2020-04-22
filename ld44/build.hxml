@@ -1,0 +1,5 @@
+base.hxml
+-debug
+-lib hldx
+-D windowSize=1280x720
+-hl ld44.hl

@@ -1,0 +1,1 @@
+cp ld45.hl D:/Dropbox/Syncthing/LudumDare/LD45

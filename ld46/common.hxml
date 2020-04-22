@@ -1,0 +1,7 @@
+-cp src
+-lib heeps
+-lib deepnightlibs
+-lib stb_ogg_sound
+-lib hscript
+-D heaps_enable_hl_mp3
+-main Main

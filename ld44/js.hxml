@@ -1,0 +1,6 @@
+base.hxml
+-dce full
+-D analyzer-optimize
+-js ld44.js
+--next
+-cmd cp "ld44.js" "D:\Dropbox\Syncthing\LudumDare\LD44\ld44.js"

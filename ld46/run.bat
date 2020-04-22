@@ -1,0 +1,1 @@
+..\tools\hl\hl.exe ld46.hl

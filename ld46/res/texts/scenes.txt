@@ -1,0 +1,85 @@
+#base
+I caught it at last.
+This little morphling has been lurking around my base for a while now.
+
+It doesn't seem hostile, but... I don't quite know what to do with it either.
+Should I try and feed it?
+#good
+So it evolved! Looks vaguely anthropomorphic, actually.
+
+Maybe it tried to imitate me in its own way.
+It's strangely endearing.
+#bad
+Huh, it changed! The shape is closer to animalistic now.
+
+I sense some wariness from the morpling. Well, no wonder.
+Maybe it's for the better that it doesn't grow trusting people too much.
+#good2
+It evolved again! And it looks even more human now!
+But this is problematic in its own way.
+
+Now I won't be able to just... toss it into the wild, will I.
+Is there a way to make it enter human society then?
+#neutral
+Another transformation! 
+It looks well-balanced in terms of strength and empathy.
+
+I think it's clearly not a pet anymore. What, then?
+A potential ally to humanity? What's left of it, anyways...
+#bad2
+Another breakthrough - for now, metaphorical.
+It's sturdy and angry enough to literally break through the dome.
+
+I just hope it can fend for itself out there...
+And, ideally, remember I gave it a hand once.
+#healer
+The Healer.
+As ever eager to learn, explore and help in return.
+
+His constant fascination with this broken, hopeless world is contagious.
+Maybe we both became something else. Something more.
+
+Alive, truly.
+#guard
+The Guardian.
+Loyal to a fault and ready to endure any damage for the sake of others.
+
+Maybe we still have hope in all this rebuilding civilization venture.
+Ahh... I almost forgot I once wished for it with all my heart.
+
+Keep us alive, friend.
+#soldier
+The Soldier.
+A perfect instrument, a deadly weapon.
+
+Will it join us in our campaing to reclaim the world?
+Was it ever our goal at all?
+
+For now, we'll just focus on staying alive.
+#predator
+The Predator. 
+Strong, fast and mistrustful.  Unloving, as expected.
+It will definitely survive the outer world now.
+
+Go on. You're on your own in this mess now.
+Stay alive.
+#death_larva
+Yeah, I see. I see. It died. 
+Too bad, but... the resources are scarce.
+
+And I also need to survive.
+#death
+No no no... you're dead? You aren't, right? 
+This shitty place we're bound to live in...
+
+I'm so sorry.
+#evo_fail
+Ah... what went wrong?
+Did it not have enough raw materials to evolve?
+
+If only I...
+#escape
+Wait, come back! You're not ready yet!
+You should have stayed a little more, dammit.
+
+...or perhaps I should've treated you better.

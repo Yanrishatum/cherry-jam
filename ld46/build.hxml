@@ -1,0 +1,5 @@
+common.hxml
+-lib hlsdl
+-hl ld46.hl
+-debug
+-D windowSize=960x540

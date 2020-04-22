@@ -1,0 +1,240 @@
+{
+  "state": {
+    "veggies": 7,
+    "meat": 7,
+    "cloth": 5,
+    "armor": 5,
+    "meds": 3,
+    "toy": 3
+  },
+  "evolutions": {
+    "base": {
+      "health": 40,
+      "hunger": 10,
+      "humanity": 20,
+      "emotions": ["UContent", "UUnsafe", "UFeeble", "URestless", "UHungry", "Dying"],
+      "flags": [],
+      "index": 0,
+      "music": "theme_base.ogg",
+      "leafs": ["good", "bad"],
+      "text": "a-larva",
+      "name": "Larva",
+      "info": [
+        "alert",
+        "fidgety",
+        "confused"
+      ]
+    },
+    "good": {
+      "health": 60,
+      "hunger": 50,
+      "humanity": 40,
+      "emotions": ["Happy", "Lonely", "UUnsafe", "UFeeble", "Hungry", "Dying"],
+      "flags": ["good"],
+      "index": 1,
+      "music": "theme_good.ogg",
+      "leafs": ["good2", "neutral"],
+      "text": "b-urchin",
+      "name": "Urchin",
+      "info": [
+        "placid",
+        "curious",
+        "learning"
+      ]
+    },
+    "good2": {
+      "health": 80,
+      "hunger": 50,
+      "humanity": 60,
+      "emotions": ["Happy", "Lonely", "Unsafe", "Feeble", "Hungry", "Dying"],
+      "flags": ["good"],
+      "index": 3,
+      "music": "theme_good2.ogg",
+      "leafs": ["healer", "guard"],
+      "text": "c-mimic",
+      "name": "Mimic",
+      "info": [
+        "friendly",
+        "trusting",
+        "attentive"
+      ]
+    },
+    "neutral": {
+      "health": 60,
+      "hunger": 50,
+      "humanity": 30,
+      "emotions": ["Content", "Respectful", "Unsafe", "Feeble", "Hungry", "Dying"],
+      "flags": [],
+      "index": 4,
+      "music": "theme_neutral.ogg",
+      "leafs": ["guard", "soldier"],
+      "text": "c-brute",
+      "name": "Brute",
+      "info": [
+        "vigilant",
+        "resilient",
+        "vigorous"
+      ]
+    },
+    "bad": {
+      "health": 60,
+      "hunger": 50,
+      "humanity": 20,
+      "emotions": ["Content", "Respectful", "UAngry", "URestless", "Hungry", "Dying"],
+      "flags": ["evil"],
+      "index": 2,
+      "music": "theme_bad.ogg",
+      "leafs": ["neutral", "bad2"],
+      "text": "b-hound",
+      "name": "Hound",
+      "info": [
+        "wary",
+        "militant",
+        "anxious"
+      ]
+    },
+    "bad2": {
+      "health": 80,
+      "hunger": 50,
+      "humanity": 30,
+      "emotions": ["Content", "Respectful", "Angry", "Restless", "Hungry", "Dying"],
+      "flags": ["evil"],
+      "index": 5,
+      "music": "theme_bad2.ogg",
+      "leafs": ["soldier", "predator"],
+      "text": "c-beast",
+      "name": "Beast",
+      "info": [
+        "aggressive",
+        "preying",
+        "tough"
+      ]
+    },
+    "healer": {
+      "health": 100,
+      "hunger": 100,
+      "humanity": 100,
+      "emotions": ["Happy", "Lonely", "Unsafe", "Feeble", "Hungry", "Dying"],
+      "flags": ["good"],
+      "index": 6,
+      "music": "theme_test46.mp3",
+      "leafs": [],
+      "text": "d-empty",
+      "name": "Healer",
+      "info": [
+        "caring",
+        "empathetic",
+        "expressive"
+      ]
+    },
+    "guard": {
+      "health": 100,
+      "hunger": 100,
+      "humanity": 80,
+      "emotions": ["Happy", "Respectful", "Unsafe", "Feeble", "Hungry", "Dying"],
+      "flags": [],
+      "index": 7,
+      "music": "theme_guardian.ogg",
+      "leafs": [],
+      "text": "d-empty",
+      "name": "Guardian",
+      "info": [
+        "loyal",
+        "brave",
+        "protective"
+      ]
+    },
+    "soldier": {
+      "health": 100,
+      "hunger": 100,
+      "humanity": 50,
+      "emotions": ["Content", "Respectful", "Unsafe", "Feeble", "Hungry", "Dying"],
+      "flags": [],
+      "index": 8,
+      "music": "theme_test46.mp3",
+      "leafs": [],
+      "text": "d-empty",
+      "name": "Soldier",
+      "info": [
+        "warlike",
+        "dutiful",
+        "firm"
+      ]
+    },
+    "predator": {
+      "health": 100,
+      "hunger": 100,
+      "humanity": 10,
+      "emotions": ["Content", "Respectful", "Angry", "Restless", "Hungry", "Dying"],
+      "flags": ["evil"],
+      "index": 9,
+      "music": "theme_test46.mp3",
+      "leafs": [],
+      "text": "d-empty",
+      "name": "Predator",
+      "info": [
+        "unallied",
+        "ruthless",
+        "triumphant"
+      ]
+    }
+  },
+  "stages": [10, 20, 30],
+  "costs": {
+    "scavenge": 5,
+    "food": 1,
+    "evofood": 1,
+    "heal": 2,
+    "play": 2
+  },
+  "balance": {
+    "veggies": {
+      "health": 10,
+      "hunger": 20,
+      "humanity": 10
+    },
+    "meat": {
+      "health": 15,
+      "hunger": 30,
+      "humanity": 0
+    },
+    "armor": {
+      "health": 10,
+      "hunger": 0,
+      "humanity": -5
+    },
+    "cloth": {
+      "health": 5,
+      "hunger": 0,
+      "humanity": 10
+    },
+    "medicine": {
+      "health": 10,
+      "hunger": 0,
+      "humanity": 10
+    },
+    "toy": {
+      "health": 0,
+      "hunger": 0,
+      "humanity": 0
+    }
+  },
+  "step_hunger": -10,
+  "step_heath": -5,
+  "sick_humanity": -10,
+  "sick_health": -25,
+  "lonely_humanity": -5,
+  "sick_timer": 2,
+  "meds_timer": 5,
+  "hunger_damage": -25,
+  
+  "long_time": 5,
+  "hungry_percent": 0.3,
+  "unhappy_percent": 0.1,
+  "dying_percent": 0.2,
+  "lonely_time": 5,
+  "evo_min": [2, 4, 8],
+  
+  "scavenge_amount": 2,
+  "scavenge_turns": 10
+}
