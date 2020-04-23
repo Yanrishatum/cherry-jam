@@ -1,29 +1,549 @@
 {
 	"sheets": [
 		{
-			"name": "test",
+			"name": "cars",
 			"columns": [
 				{
-					"typeStr": "16",
-					"name": "d"
-				},
-				{
-					"typeStr": "7",
-					"name": "i"
+					"typeStr": "0",
+					"name": "name"
 				},
 				{
 					"typeStr": "13",
-					"name": "f"
+					"name": "image",
+					"display": null
+				},
+				{
+					"typeStr": "6:character",
+					"name": "character",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "acceleration"
+				},
+				{
+					"typeStr": "4",
+					"name": "deceleration"
+				},
+				{
+					"typeStr": "4",
+					"name": "drag"
+				},
+				{
+					"typeStr": "4",
+					"name": "friction"
+				},
+				{
+					"typeStr": "4",
+					"name": "handling"
+				},
+				{
+					"typeStr": "4",
+					"name": "handling_ratio"
+				},
+				{
+					"typeStr": "4",
+					"name": "drift_bonus"
+				},
+				{
+					"typeStr": "4",
+					"name": "max_speed",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "base_hp",
+					"display": null
 				}
 			],
 			"lines": [
 				{
-					"f": "C:/_work/2020/pk/res/credits/logo.png",
-					"i": ""
+					"name": "emo",
+					"image": "cars/emo.png",
+					"acceleration": 750,
+					"handling": 3,
+					"max_speed": 1800,
+					"base_hp": 200,
+					"deceleration": 600,
+					"drag": 600,
+					"handling_ratio": 1.15,
+					"friction": 2000,
+					"drift_bonus": 1.1,
+					"character": "vincent"
+				},
+				{
+					"name": "rider",
+					"image": "cars/rider1.png",
+					"acceleration": 450,
+					"handling": 1.5,
+					"max_speed": 2100,
+					"base_hp": 210,
+					"deceleration": 500,
+					"drag": 600,
+					"handling_ratio": 1,
+					"friction": 1000,
+					"drift_bonus": 0.5,
+					"character": "ezekiel"
+				},
+				{
+					"name": "stroker",
+					"image": "cars/stoker.png",
+					"acceleration": 1000,
+					"handling": 3.5,
+					"max_speed": 1700,
+					"base_hp": 230,
+					"deceleration": 600,
+					"drag": 600,
+					"handling_ratio": 1.25,
+					"friction": 1700,
+					"drift_bonus": 1.5,
+					"character": "rosette"
+				},
+				{
+					"name": "booty",
+					"image": "cars/rider1.png",
+					"character": "blanche",
+					"acceleration": 1100,
+					"deceleration": 600,
+					"drag": 400,
+					"friction": 2000,
+					"handling": 1.6,
+					"handling_ratio": 1,
+					"drift_bonus": 1.2,
+					"max_speed": 2100,
+					"base_hp": 90
 				}
 			],
 			"separators": [],
 			"props": {}
+		},
+		{
+			"name": "skills",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id"
+				},
+				{
+					"typeStr": "2",
+					"name": "is_ability",
+					"display": null
+				},
+				{
+					"typeStr": "13",
+					"name": "icon",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "cooldown"
+				},
+				{
+					"typeStr": "4",
+					"name": "price",
+					"display": 1
+				},
+				{
+					"typeStr": "4",
+					"name": "data",
+					"display": null
+				},
+				{
+					"typeStr": "4",
+					"name": "data2",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "tech",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "fluff",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "blood_droplet",
+					"is_ability": false,
+					"icon": "icons/item_bloodytear.png",
+					"name": "Blood droplet",
+					"tech": "Restores a small amount of health.",
+					"fluff": "Small yet potent crystallized droplet.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 0.25
+				},
+				{
+					"id": "bloodnana",
+					"is_ability": false,
+					"icon": "icons/item_bloodbanana.png",
+					"name": "Bloodnana",
+					"tech": "Restores a decent amount of health.",
+					"fluff": "Fresh, ripe and absolutely delicious.",
+					"price": 0.1,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 0.5
+				},
+				{
+					"id": "cherry_soup",
+					"is_ability": false,
+					"icon": "icons/item_cherry_soup.png",
+					"name": "Cherry soup",
+					"tech": "Restores a great amount of health.",
+					"fluff": "Smells suspiciously like blood.",
+					"price": 0.2,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 0.75
+				},
+				{
+					"id": "blood_potion",
+					"is_ability": false,
+					"icon": "icons/item_vial.png",
+					"name": "Blood potion",
+					"tech": "Restores you to full health.",
+					"fluff": "Blood, sweet blood... it sings to you.",
+					"price": 0.3,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 1
+				},
+				{
+					"id": "lucky_bone",
+					"is_ability": false,
+					"icon": "icons/item_bone.png",
+					"name": "Lucky bone",
+					"tech": "Deals damage to the opponent in front of you.",
+					"fluff": "Didn't bring much luck to its original owner.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 20
+				},
+				{
+					"id": "friendly_skull",
+					"is_ability": false,
+					"icon": "icons/item_skull.png",
+					"name": "Friendly skull",
+					"tech": "Summons three skulls to bite those who come close.",
+					"fluff": "It smiles at you encouragingly.",
+					"price": 0.1,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 20
+				},
+				{
+					"id": "jolly_hammer",
+					"is_ability": false,
+					"icon": "icons/item_squeaky_hammer.png",
+					"name": "Jolly hammer",
+					"tech": "Two pairs of hammers strike those to your left and right.",
+					"fluff": "Best tool for promoting cooperation.",
+					"price": 0.2,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 20
+				},
+				{
+					"id": "party_bomb",
+					"is_ability": false,
+					"icon": "icons/item_bomb.png",
+					"name": "Party bomb",
+					"tech": "Deals area damage to the opponents behind you.",
+					"fluff": "The celebration is gonna be a blast.",
+					"price": 0.3,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 20
+				},
+				{
+					"id": "bouncy",
+					"is_ability": false,
+					"icon": "icons/item_ball.png",
+					"name": "Bouncy",
+					"tech": "Negates collision damage for a short amount of time.",
+					"fluff": "You are pretty sure there's something inside.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 4,
+					"data2": 0
+				},
+				{
+					"id": "teddy",
+					"is_ability": false,
+					"icon": "icons/item_teddy.png",
+					"name": "Teddy",
+					"tech": "Boosts braking for a short amount of time.",
+					"fluff": "Your loyal companion from day one.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 4,
+					"data2": 4
+				},
+				{
+					"id": "mushy",
+					"is_ability": false,
+					"icon": "icons/item_brain.png",
+					"name": "Mushy",
+					"tech": "Boosts acceleration for a short amount of time.",
+					"fluff": "Pretty smart choice for a birthday present.",
+					"price": 0.15,
+					"cooldown": 5,
+					"data": 4,
+					"data2": 4
+				},
+				{
+					"id": "sparkly",
+					"is_ability": false,
+					"icon": "icons/item_ghostie.png",
+					"name": "Sparkly",
+					"tech": "Allows you to pass right through obstacles.",
+					"fluff": "So happy-go-lucky it kind of annoys you.",
+					"price": 0.15,
+					"cooldown": 5,
+					"data": 4,
+					"data2": 0
+				},
+				{
+					"id": "overdose",
+					"is_ability": true,
+					"icon": "icons/skill_boost.png",
+					"name": "Overdose",
+					"tech": "Gives you a considerable speed and acceleration boost.",
+					"fluff": "Let the blood boil! Top speed!",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 8,
+					"data2": 400
+				},
+				{
+					"id": "hyper_armor",
+					"is_ability": true,
+					"icon": "icons/skill_splash.png",
+					"name": "Hyper Armor",
+					"tech": "Temporarily protects you from attacks and collisions.",
+					"fluff": "They just can't see you in the mist.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 8,
+					"data2": 0
+				},
+				{
+					"id": "blood_burst",
+					"is_ability": true,
+					"icon": "icons/skill_shield.png",
+					"name": "Bloob Burst",
+					"tech": "Lightly damages and pushes away enemies around you.",
+					"fluff": "Sorry to burst your bubble, sweetie.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 8,
+					"data2": 0
+				},
+				{
+					"id": "unholy_sword",
+					"is_ability": true,
+					"icon": "icons/skill_emosword.png",
+					"name": "Unholy Sword",
+					"tech": "Conjures a magical sword that circles around you",
+					"fluff": "Truly, I am the bone of my sword.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 4,
+					"data2": 600
+				},
+				{
+					"id": "high_stakes",
+					"is_ability": true,
+					"icon": "icons/skill_high_stakes(get it).png",
+					"name": "High Stakes",
+					"tech": "Releases a barrage of deadly spikes in front of you.",
+					"fluff": "Thank you, I prefer my stake well done.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 0
+				},
+				{
+					"id": "stampede",
+					"is_ability": true,
+					"icon": "icons/skill_ass_horses.png",
+					"name": "Stampede",
+					"tech": "Summons rabid horses to your left and right.",
+					"fluff": "Was steel ball run always this fun?",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 3,
+					"data2": 300
+				},
+				{
+					"id": "brazen_trap",
+					"is_ability": true,
+					"icon": "icons/skill_trap_literally.png",
+					"name": "Brazen Trap",
+					"tech": "Spawns a large number traps behind you.",
+					"fluff": "Strikes you when you least expect it.",
+					"price": 0.05,
+					"cooldown": 5,
+					"data": 0,
+					"data2": 4
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "character",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "id",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "tech",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "fluff",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "ingame",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"id": "vincent",
+					"name": "Vincent",
+					"tech": "Vincent is a well-rounded character with exceptional affinity for blood. He has overall balanced stats, and his special skill creates a safe zone around him.",
+					"fluff": "Last of the blood of the Old Kings, Vincent Llerovente was spending his lonely days in boredom and decadence until he got a special invitation to the Crimson Colosseum.",
+					"ingame": [
+						{
+							"rammed": "My, how crude.",
+							"damaged": "Nice try, for a beginner.",
+							"attack": "Sorry, I couldn't resist.",
+							"taunt": "Hmph. Insultingly easy."
+						},
+						{
+							"rammed": "Is that all? Pathetic.",
+							"damaged": "I didn't even feel that. ",
+							"attack": "You should be honoured.",
+							"taunt": "Was there ever any doubt?"
+						}
+					]
+				},
+				{
+					"id": "rosette",
+					"name": "Rosette",
+					"tech": "Rosette is all about pure strength. She prefers to ride aggressively, ramming into unsuspecting opponents and showering those who are in the lead with deadly stakes.",
+					"fluff": "Tired of smirks and sneers of the high society, rebellious neo-vamp Rosette Kurt is ready to prove herself on the field of battle. And break a couple of snobby faces, if she must.",
+					"ingame": [
+						{
+							"rammed": "What was that, punk?!",
+							"damaged": "I'll beat you to a bloody pulp!",
+							"attack": "How do you like that!",
+							"taunt": "That's to be expected!"
+						},
+						{
+							"rammed": "Yer picking a fight?!",
+							"damaged": "You just got lucky!",
+							"attack": "Come at me!",
+							"taunt": "Hah! Giving up so soon?"
+						}
+					]
+				},
+				{
+					"id": "ezekiel",
+					"name": "Ezekiel",
+					"tech": "Ezekiel trusts his mechanical steed Ferdinand to reach the absolute top speed, though the maneuvrability might not be so high. He can summon more horses to his aid.",
+					"fluff": "High Marchal of Her Holy Majesty, Ezekiel von Druett had little to no worthy opponents for a long, long time. A chance to relive the days of his battle glory is undeniably a welcome one.",
+					"ingame": [
+						{
+							"rammed": "Show some style at least!",
+							"damaged": "That was a solid one.",
+							"attack": "Where's your fighting spirit?",
+							"taunt": "Rejoice, my trusty steed!"
+						},
+						{
+							"rammed": "Don't you dare hurt Ferdinand!",
+							"damaged": "Steady, Ferdinand.",
+							"attack": "Better luck next time.",
+							"taunt": "I knew I still had it in me!"
+						}
+					]
+				},
+				{
+					"id": "blanche",
+					"name": "Blanche",
+					"tech": "Blanche is crafty and devious. She is on the fragile side, but her speed and maneuvrability are outstanding, and her special skill is perfect for making a swift retreat.",
+					"fluff": "Beautiful, mysterious, deceptively innocent Blanche d'Anore has been steadily raising in the vampire ranks. For her, this is yet another opportunity to get rid of powerful enemies.",
+					"ingame": [
+						{
+							"rammed": "Mind your own business!",
+							"damaged": "Ouch, that hurts!",
+							"attack": "I hope you're not mad~",
+							"taunt": "Praise me, daddy!"
+						},
+						{
+							"rammed": "I definitely won't forget that!",
+							"damaged": "The nerve!",
+							"attack": "Oops! My bad~",
+							"taunt": "Too slow, teehee~"
+						}
+					]
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "character@ingame",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "rammed",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "damaged",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "attack"
+				},
+				{
+					"typeStr": "1",
+					"name": "taunt",
+					"display": null
+				}
+			]
 		}
 	],
 	"customTypes": [],

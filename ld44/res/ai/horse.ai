@@ -1,0 +1,331 @@
+{
+	"type": "Selector",
+	"name": "rootNode",
+	"childNodes": [
+		{
+			"type": "Sequence",
+			"childNodes": [
+				{
+					"type": "Selector",
+					"childNodes": [
+						{
+							"type": "Engine",
+							"properties": [
+								{
+									"name": "Power",
+									"value": 100
+								}
+							],
+							"decorators": [
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Op",
+											"value": ">"
+										},
+										{
+											"name": "Distance",
+											"value": 2000
+										},
+										{
+											"name": "Target",
+											"value": "nearest"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Engine"
+						}
+					]
+				},
+				{
+					"type": "Selector",
+					"childNodes": [
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "overdose"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "overdose"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "overdose"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "blood_burst"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Target",
+											"value": "nearest"
+										},
+										{
+											"name": "Distance",
+											"value": 100
+										}
+									]
+								},
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "blood_burst"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "blood_burst"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									],
+									"inverseCheckCondition": false
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "hyper_armor"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "hyper_armor"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "hyper_armor"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									]
+								},
+								{
+									"type": "HP Check",
+									"properties": [
+										{
+											"name": "Value",
+											"value": 70
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "brazen_trap"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "brazen_trap"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "brazen_trap"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									]
+								},
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Target",
+											"value": "in back"
+										},
+										{
+											"name": "Op",
+											"value": ">"
+										},
+										{
+											"name": "Distance",
+											"value": 500
+										}
+									]
+								},
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Target",
+											"value": "in back"
+										},
+										{
+											"name": "Distance",
+											"value": 100
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "stampede"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "stampede"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "stampede"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									]
+								},
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Distance",
+											"value": 300
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "high_stakes"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Has ability?",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "high_stakes"
+										}
+									]
+								},
+								{
+									"type": "Ability Cooldown",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "high_stakes"
+										},
+										{
+											"name": "State",
+											"value": 99
+										}
+									]
+								},
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Target",
+											"value": "in front"
+										},
+										{
+											"name": "Distance",
+											"value": 600
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "Result"
+						}
+					]
+				},
+				{
+					"type": "Selector"
+				}
+			]
+		}
+	]
+}

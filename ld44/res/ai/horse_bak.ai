@@ -1,0 +1,312 @@
+{
+	"type": "Selector",
+	"name": "rootNode",
+	"childNodes": [
+		{
+			"type": "Selector",
+			"decorators": [
+				{
+					"type": "Race place",
+					"properties": [
+						{
+							"name": "Place",
+							"value": 1
+						}
+					]
+				}
+			],
+			"childNodes": [
+				{
+					"type": "Sequence",
+					"decorators": [
+						{
+							"type": "Distance to others",
+							"periodic": false,
+							"inverseCheckCondition": false,
+							"properties": [
+								{
+									"name": "Target",
+									"value": "in back"
+								}
+							]
+						},
+						{
+							"type": "Ability State",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "attack"
+								},
+								{
+									"name": "State",
+									"value": "Cooldown < 0.5s"
+								}
+							]
+						}
+					],
+					"childNodes": [
+						{
+							"type": "Engine",
+							"properties": [
+								{
+									"name": "Power",
+									"value": 50
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Target",
+									"value": "Closest car"
+								},
+								{
+									"name": "Ability",
+									"value": "attack"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Distance",
+											"value": 50
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Sequence",
+					"childNodes": [
+						{
+							"type": "Engine"
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Target",
+									"value": "Self"
+								},
+								{
+									"name": "Ability",
+									"value": "boost"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Ability State",
+									"properties": [
+										{
+											"name": "Ability",
+											"value": "boost"
+										},
+										{
+											"name": "State",
+											"value": "Ready"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Selector",
+			"decorators": [
+				{
+					"type": "Race place",
+					"properties": [
+						{
+							"name": "Place",
+							"value": 2
+						}
+					]
+				}
+			],
+			"childNodes": [
+				{
+					"type": "Sequence",
+					"decorators": [
+						{
+							"type": "Distance to others",
+							"periodic": false,
+							"inverseCheckCondition": false
+						},
+						{
+							"type": "Ability State",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "attack"
+								},
+								{
+									"name": "State",
+									"value": "Cooldown < 0.5s"
+								}
+							]
+						}
+					],
+					"childNodes": [
+						{
+							"type": "Engine",
+							"properties": [
+								{
+									"name": "Power",
+									"value": 50
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Target",
+									"value": "Closest car"
+								},
+								{
+									"name": "Ability",
+									"value": "attack"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Distance",
+											"value": 50
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Engine"
+				}
+			]
+		},
+		{
+			"type": "Selector",
+			"decorators": [
+				{
+					"type": "Race place",
+					"properties": [
+						{
+							"name": "Place",
+							"value": 3
+						}
+					]
+				}
+			],
+			"childNodes": [
+				{
+					"type": "Sequence",
+					"decorators": [
+						{
+							"type": "Distance to others",
+							"periodic": false,
+							"inverseCheckCondition": false
+						},
+						{
+							"type": "Ability State",
+							"properties": [
+								{
+									"name": "Ability",
+									"value": "attack"
+								},
+								{
+									"name": "State",
+									"value": "Cooldown < 0.5s"
+								}
+							]
+						}
+					],
+					"childNodes": [
+						{
+							"type": "Engine",
+							"properties": [
+								{
+									"name": "Power",
+									"value": 50
+								}
+							]
+						},
+						{
+							"type": "Ability",
+							"properties": [
+								{
+									"name": "Target",
+									"value": "Closest car"
+								},
+								{
+									"name": "Ability",
+									"value": "attack"
+								}
+							],
+							"decorators": [
+								{
+									"type": "Distance to others",
+									"properties": [
+										{
+											"name": "Distance",
+											"value": 50
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Engine"
+				}
+			]
+		},
+		{
+			"type": "Selector",
+			"childNodes": [
+				{
+					"type": "Engine",
+					"properties": [
+						{
+							"name": "Power",
+							"value": 200
+						}
+					],
+					"decorators": [
+						{
+							"type": "Distance to others",
+							"properties": [
+								{
+									"name": "Op",
+									"value": ">"
+								},
+								{
+									"name": "Distance",
+									"value": 2000
+								},
+								{
+									"name": "Target",
+									"value": "first"
+								}
+							]
+						}
+					]
+				},
+				{
+					"type": "Engine"
+				}
+			]
+		}
+	]
+}

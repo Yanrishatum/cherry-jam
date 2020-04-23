@@ -1,0 +1,217 @@
+{
+  "gatherPerPeson": 1.2,
+  "camp_cost": 1.2,
+  "hungerLimit": 3,
+  "max_person_gain": 3,
+  "max_party": 20,
+  "tiles": {
+    "Grass": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 1]],
+      "events": [],
+      "descr": "Basic grassy terrain with harvestable goods"
+    },
+    "Forest": {
+      "foodPerPerson": 2,
+      "waterPerPerson": 2,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 1], ["clothing", 1], ["instruments", 1]],
+      "events": ["hunt", "ambush"],
+      "descr": "Risky terrain rich with animal life and resources"
+    },
+    "Land": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 1]],
+	  "events": ["people"],
+      "descr": "Basic terrain with harvestable goods"
+    },
+    "Mountain": {
+      "foodPerPerson": 0,
+      "waterPerPerson": 0,
+      "clothingPerPerson": 0,
+      "instruments": { "use": 3, "convert": "Land" },
+      "gather": [["instruments", 2]],
+	  "events": ["people", "avalanche"],
+      "descr": "Unpassable mountain you can mine"
+    },
+    "Ocean": {
+      "foodPerPerson": 0,
+      "waterPerPerson": 0,
+      "clothingPerPerson": 0,
+      "instruments": { "use": 2, "convert": "Bridge" },
+      "gather": [["water", 4]],
+	  "events": ["fish"],
+      "descr": "Unsafe for travel, yet a good source of water"
+    },
+    "Corruption": {
+      "foodPerPerson": 2,
+      "waterPerPerson": 2,
+      "clothingPerPerson": 1,
+      "instruments": null,
+      "gather": [],
+	  "events": ["plague"],
+      "descr": "Risky terrain already corrupted by the Slither"
+    },
+    "Bridge": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [],
+	  "events": ["gremlins"],
+      "descr": "A sturdy enough bridge over the water"
+    },
+    "House": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 1], ["water", 1], ["clothing", 1], ["instruments", 1]],
+	  "events": ["people", "gremlins"],
+      "descr": "A lodging you can scavenge for valuables"
+    },
+    "Village": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 2], ["water", 2], ["clothing", 2], ["instruments", 2]],
+	  "events": ["people", "gremlins"],
+      "descr": "A village you can scavenge for valuables"
+    },
+    "Tower": {
+      "foodPerPerson": 1,
+      "waterPerPerson": 1,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["food", 3], ["water", 3], ["clothing", 3], ["instruments", 3]],
+	  "events": ["plague"],
+      "descr": "An abandoned tower guarding tainted treasure"
+    },
+    "Snow": {
+      "foodPerPerson": 2,
+      "waterPerPerson": 2,
+      "clothingPerPerson": 2,
+      "instruments": null,
+      "gather": [["water", 1]],
+	  "events": ["frost"],
+      "descr": "Risky cold terrain that's unlikely to sustain you"
+    },
+    "SnowForest": {
+      "foodPerPerson": 3,
+      "waterPerPerson": 3,
+      "clothingPerPerson": 2,
+      "instruments": null,
+      "gather": [["water", 1], ["instruments", 1]],
+	  "events": ["hunt", "ambush"],
+      "descr": "Extremely harsh, cold and dangerous terrain"
+    },
+    "SnowMountain": {
+      "foodPerPerson": 0,
+      "waterPerPerson": 0,
+      "clothingPerPerson": 0,
+      "instruments": { "use": 3, "convert": "Snow" },
+      "gather": [["instruments", 3]],
+	  "events": ["people", "avalanche"],
+      "descr": "Unpassable snow mountain you can mine"
+    },
+    "Crater": {
+      "foodPerPerson": 0,
+      "waterPerPerson": 0,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["instruments", 1]],
+	  "events": ["gremlins"],
+      "descr": "Risky terrain that can still yield some resources"
+    },
+    "Volcano": {
+      "foodPerPerson": 0,
+      "waterPerPerson": 0,
+      "clothingPerPerson": 0,
+      "instruments": null,
+      "gather": [["instruments", 2]],
+	  "events": ["fish", "avalanche"],
+      "descr": "Unpassable volcano you can mine, or..."
+    }
+  },
+  
+  "events": [
+    {
+      "id": "hunt",
+      "text": "You hunt some wildlife. The meat will be cured and stored for later, and the hides will keep you safe.",
+      "accept": [["food", 5], ["clothing", 2]],
+      "deny": null,
+      "min_population": 1
+    },
+	{
+      "id": "fish",
+      "text": "Great catch! You replenish your food stocks and refine fish carcasses into excellent glue.",
+      "accept": [["food", 5], ["instruments", 2]],
+      "deny": null,
+      "min_population": 1
+    },
+	{
+      "id": "people",
+      "text": "You meet some vagrants, cold and hungry and hopeful. They hesitantly plead to join your squad.",
+      "accept": [["humans", 1]],
+      "deny": [],
+      "min_population": 1
+    },
+	{
+      "id": "gremlins",
+      "text": "Some gremlin hunters offer to barter food if you provide their tribe with clothing and working tools",
+      "accept": [["food", 5], ["clothing", -3], ["instruments", -2]],
+      "deny": [],
+      "min_population": 1
+    },
+	{
+      "id": "ambush",
+      "text": "An ambush! You've lost some of your belongings, but you can retrieve them... at the cost of people's lives.",
+      "accept": [["humans", -1], ["food", 4]],
+      "deny": [["clothing", -4], ["instruments", -4]],
+      "min_population": 2
+    },
+	{
+      "id": "avalanche",
+      "text": "The avalanche is coming! Will you leave your comrades to their fate to save precious resources?",
+      "accept": [["humans", -1]],
+      "deny": [["instruments", -3]],
+      "min_population": 2
+    },
+	{
+      "id": "frost",
+      "text": "The cold is so horrible your comrades beg for extra clothes to keep themselves warm. Do you comply?",
+      "accept": [["clothing", -3]],
+      "deny": [["humans", -1]],
+      "min_population": 2
+    },
+	{
+      "id": "plague",
+      "text": "Your comrades have caught the Slith! Are you ready to double their rations to nourish them back to health?",
+      "accept": [["food", -2]],
+      "deny": [["humans", -1]],
+      "min_population": 2
+    }
+  ],
+  
+  "pool": {
+    "dist_easy": 4,
+    "dist_normal": 8,
+    "dist_hard": 14,
+    "events_easy": [2,4],
+    "events_normal": [2,4],
+    "events_hard": [1,5],
+    "first": "hex-00",
+    "easy": ["hex-t1-00", "hex-t1-01", "hex-t1-02", "hex-t1-03", "hex-t1-04", "hex-t1-05", "hex-t1-06", "hex-t1-07"],
+    "normal": ["hex-t2-00", "hex-t2-01", "hex-t2-02", "hex-t2-03", "hex-t2-04", "hex-t2-05", "hex-t2-06", "hex-t3-07"],
+    "hard": ["hex-t3-00", "hex-t3-01", "hex-t3-02", "hex-t3-03", "hex-t3-04", "hex-t3-05", "hex-t3-06", "hex-t3-07"],
+    "last": "hex-final"
+  }
+}

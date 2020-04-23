@@ -1,0 +1,11 @@
+{
+	"width": 100,
+	"height": 100,
+	"type": "level3d",
+	"children": [
+		{
+			"type": "object",
+			"name": "group"
+		}
+	]
+}

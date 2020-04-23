@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.3" orientation="hexagonal" renderorder="right-down" width="5" height="8" tilewidth="30" tileheight="26" infinite="0" hexsidelength="6" staggeraxis="y" staggerindex="odd" backgroundcolor="#444444" nextlayerid="8" nextobjectid="2">
+ <tileset firstgid="1" name="hex mini" tilewidth="18" tileheight="18" tilecount="20" columns="5">
+  <tileoffset x="0" y="1"/>
+  <image source="hexmini.png" width="106" height="72"/>
+ </tileset>
+ <tileset firstgid="21" source="hexagonal.tsx"/>
+ <layer id="7" name="Ground" width="5" height="8">
+  <data encoding="base64" compression="zlib">
+   eJyTYGBgkIBiUSgGscWgbEkohokhi6OLwfSKI4nD+JJYxJAxuhjMTQAmGwOY
+  </data>
+ </layer>
+</map>

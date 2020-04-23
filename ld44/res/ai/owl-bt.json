@@ -1,0 +1,144 @@
+{
+    "nodes": [
+        {
+            "name": "Selector",
+            "icon": "question",
+            "isComposite": true
+        },
+        {
+            "name": "Sequence",
+            "icon": "arrow-right",
+            "isComposite": true
+        },
+        {
+            "name": "Engine",
+            "icon": "arrow-up",
+            "description": "Engine power to {{Power}}%",
+            "properties": [
+                {
+                    "name": "Power",
+                    "type": "number",
+                    "default": 100,
+                    "min": -300,
+                    "max": 300
+                }
+            ]
+        },
+        {
+            "name": "Ability",
+            "icon": "cog",
+            "description": "Use ability \"{{Ability}}\"",
+            "properties": [
+                {
+                    "name": "Ability",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "Result",
+            "icon": "exclamation",
+            "description": "Return {{Result}}",
+            "properties": [
+                {
+                    "name": "Result",
+                    "type": "enum",
+                    "values": ["Success", "Failure", "Running"],
+                    "default": "Success"
+                }
+            ]
+        }
+    ],
+    "decorators": [
+        {
+            "name": "Race place",
+            "icon": "cog",
+            "description": "Place: {{Place}}",
+            "properties": [
+                {
+                    "name": "Place",
+                    "type": "number"
+                }
+            ]
+        },
+        {
+            "name": "Distance to others",
+            "icon": "cog",
+            "description": "Test `{{Target}} distance {{Op}} {{Distance}}`",
+            "properties": [
+                {
+                    "name": "Op",
+                    "type": "enum",
+                    "default": "<",
+                    "values": ["=", "!=", "<", ">", "<=", ">="]
+                },
+                {
+                    "name": "Distance",
+                    "type": "number",
+                    "default": 200
+                },
+                {
+                    "name": "Target",
+                    "type": "enum",
+                    "default": "nearest",
+                    "values": ["nearest", "first", "second", "third", "last", "in back", "in front"]
+                }
+            ]
+        },
+        {
+            "name": "Has ability?",
+            "icon": "question",
+            "description": "Has ability {{Ability}}?",
+            "properties":[
+                {
+                    "name": "Ability",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "Ability Cooldown",
+            "icon": "question",
+            "description": "Is ability \"{{Ability}}\" readiness more than {{State}}%?",
+            "properties": [
+                {
+                    "name": "Ability",
+                    "type": "string"
+                },
+                {
+                    "name": "State",
+                    "type": "number",
+                    "min": 0,
+                    "max": 100
+                }
+            ]
+        },
+        {
+            "name": "HP Check",
+            "icon": "question",
+            "description": "AI HP >= {{Value}}%",
+            "properties": [
+                {
+                    "name": "Value",
+                    "type": "number",
+                    "min": 0,
+                    "max": 100
+                }
+            ]
+        }
+    ],
+    "services": [
+        {
+            "name": "Sample service",
+            "icon": "cog",
+            "description": "sample service",
+            "properties": [
+                {
+                    "name": "BlackboardKey",
+                    "default": "Target",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+	"type": "Selector",
+	"name": "rootNode",
+	"childNodes": [
+		{
+			"type": "Sequence",
+			"decorators": [
+				{
+					"type": "Distance to others",
+					"periodic": false,
+					"inverseCheckCondition": false
+				}
+			],
+			"childNodes": [
+				{
+					"type": "Engine",
+					"properties": [
+						{
+							"name": "Power",
+							"value": 50
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "Sequence",
+			"childNodes": [
+				{
+					"type": "Engine"
+				}
+			]
+		}
+	]
+}
