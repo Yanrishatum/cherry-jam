@@ -34,7 +34,11 @@ class State {
     #end
     inline refreshConfig();
     
-    stats = new Map();
+    stats = [
+      Health => 0,
+      Hunger => 0,
+      Humanity => 0,
+    ];
     resources = [
       Veggies => config.state.veggies,
       Meat => config.state.meat,
@@ -45,7 +49,24 @@ class State {
     ];
     evo = from;
     stage = from.stage() - 1;
-    flags = new Map();
+    flags = [
+      Sick => 0,
+      Unhappy => 0,
+      Hungry => 0,
+      Evil => 0,
+      Good => 0,
+      Dying => 0,
+      Unsafe => 0,
+      LongHunger => 0,
+      LongUnhappy => 0,
+      Lonely => 0,
+      Veggies => 0,
+      Meat => 0,
+      Cloth => 0,
+      Armor => 0,
+      Toy => 0,
+      Medicine => 0,
+    ];
     nextStage();
     projected = 0;
     
@@ -85,7 +106,11 @@ class State {
   public function incStats(stat:ActionBalance, flag:StateFlags) {
     stats[Health] += stat.health;
     stats[Hunger] += stat.hunger;
-    if (flag == Toy && flags.get(Evil) > 0) stats[Humanity] -= stat.humanity;
+    trace(flag, flags.get(Evil), stat.humanity);
+    if (flag == Toy) {
+      if (flags.get(Evil) > 0) stats[Humanity] -= stat.humanity;
+      else if (flags.get(Good) > 0) stats[Humanity] += stat.humanity;
+    }
     else stats[Humanity] += stat.humanity;
     inline incFlag(flag);
   }
@@ -120,10 +145,10 @@ class State {
     // TODO: Last stage
     if (stage == 3) {
       switch (evo) {
-        case EvoHealer: Music.jingle(Res.sound.jin_healer);
-        case EvoGuard: Music.jingle(Res.sound.jin_guardian);
-        case EvoSoldier: Music.jingle(Res.sound.jin_soldier);
-        case EvoPredator: Music.jingle(Res.sound.jin_predator);
+        case EvoHealer: Music.transit(null, Res.sound.jin_healer);
+        case EvoGuard: Music.transit(null, Res.sound.jin_guardian);
+        case EvoSoldier: Music.transit(null, Res.sound.jin_soldier);
+        case EvoPredator: Music.transit(null, Res.sound.jin_predator);
         default:
       }
       Main.delayer.addF("gameover", () -> {
@@ -157,7 +182,7 @@ class State {
         else evo = conf.leafs[1];
       }
       var conf = currEvo();
-      Music.transit(Res.load("sound/" + conf.music).toSound(), Res.sound.evo2);
+      if (stage != 2) Music.transit(Res.load("sound/" + conf.music).toSound(), Res.sound.evo2);
       nextStage();
       return false;
     }

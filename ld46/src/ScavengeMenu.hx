@@ -1,3 +1,4 @@
+import hxd.Music;
 import comps.TextView;
 import comps.Tooltip;
 import State;
@@ -84,7 +85,11 @@ class ScavengeMenu extends Process {
       R.xsub(171, 10, 32, 8, 2, 1, 12, 3)
     ], root);
     scavenge.setPosition(4, 159);
-    scavenge.onClick = (_) -> destroy();
+    scavenge.onClick = (_) -> {
+      Music.transit(Res.load("sound/" + State.i.currEvo().music).toSound(), Res.sound.jin_scavenge);
+      destroy();
+    }
+    Music.transit(Res.sound.theme_scavenge, Res.sound.jin_scavenge);
     
     new comps.ResourceView(Veggies, true, root).setPosition(272, 158);
     new comps.ResourceView(Meat, true, root).setPosition(293, 158);

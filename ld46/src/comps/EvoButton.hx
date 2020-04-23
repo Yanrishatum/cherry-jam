@@ -23,9 +23,9 @@ class EvoButton extends LButton {
       R.xsub(0, 55, 34, 34, 2),
       [portraits[1]]
     ]);
-    // #if !debug
+    #if !debug
     setFlag(Disabled, R.unlocks.indexOf(name) == -1);
-    // #end
+    #end
     var t = R.a.sub(39, 30, 4, 5);
     if (conf.leafs.length == 2 && R.unlocks.indexOf(name) != -1) {
       if (R.unlocks.indexOf(conf.leafs[0]) != -1) new Bitmap(t, this).setPosition(34, 5);

@@ -216,11 +216,11 @@
     "toy": {
       "health": 0,
       "hunger": 0,
-      "humanity": 0
+      "humanity": 15
     }
   },
   "step_hunger": -10,
-  "step_heath": -5,
+  "step_health": -3,
   "sick_humanity": -10,
   "sick_health": -25,
   "lonely_humanity": -5,
