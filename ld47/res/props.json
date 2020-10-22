@@ -1,0 +1,4 @@
+{
+  "plugins": ["../../tools/plugins/atlasser-plug.js"],
+  "scene.environment": "defaultEnv.png"
+}

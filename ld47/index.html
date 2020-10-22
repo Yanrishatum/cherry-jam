@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Despairship - LD47</title>
+    <style>
+      #canvas-container {
+        /* SET TO GAME DIMENSIONS */
+        width: 1280px;
+        height: 720px;
+        position: relative;
+      }
+      #canvas-container.fullscreen {
+        width: 100%;
+        height: 100%;
+      }
+      #canvas-container.fullscreen>canvas {
+        width: 100% !important;
+        height: 100% !important;
+      }
+      
+      body {
+        background-color: #282828;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #webgl {
+        width: 100%;
+        height: 100%;
+      }
+      
+      #main-container {
+        display:flex;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+        height: 100%;
+      }
+      
+      #script-loader-container {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+      
+      .logo {
+        background: #4B423D;
+        padding: 50px;
+        border-radius: 100%;
+        position: relative;
+      }
+      
+      .spinner {
+        position: absolute;
+        width:100%;
+        height:100%;
+        border: 20px solid transparent;
+        border-top-color: #E3E3E3;
+        
+        margin-right: 1px;
+        border-radius:100%;
+        top:0;
+        left:0;
+        
+        animation-name: spinner-anim;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+      }
+      
+      @keyframes spinner-anim {
+        from {
+          transform: translate(-20px, -20px) rotate(0deg);
+        }
+        to {
+          transform: translate(-20px, -20px) rotate(360deg);
+        }
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="canvas-container">
+        <div id="script-loader-container">
+          <div class="logo">
+            <img src="res/ldx/logo_static.png">
+            <div class="spinner"></div>
+          </div>
+        </div>
+        <canvas id="webgl"></canvas>
+        <script type="text/javascript" src="game.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

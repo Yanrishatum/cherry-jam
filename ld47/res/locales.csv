@@ -1,0 +1,38 @@
+key,en
+continue,Continue
+new_game,New Game
+credits_text,"<font color='#a43e33' face='size-18'>Red Ray Band</font>
+<br/>Game design: Shess
+<br/>Graphics: ZeusDex, Shess
+<br/>Code: Yanrishatum
+<br/>Sound: Theodote, Elvendan"
+music,Music
+sfx,Sfx
+language,Language
+tutorial,Tutorial
+fullscreen,Fullscreen
+game_start,"We're definitely losing altitude, and I need to do something, fast. 
+...but first, let me take a sip of tea."
+tea_done,"So, how do I keep it afloat? The furnace could use some fuel..."
+furnace_done,"...and recalibrate the engine before it starts burning the ship."
+engine_done,"Splendid job! But all other systems are sure decaying fast, better keep an eye on them, too."
+death,"Whooosh! Is it just me, or... oh, it's not just me. It's two of me, in fact. Welcome to the crew, me!"
+death4,"My, my, isn't it getting a bit crowded here?"
+hole_appear,"Oof, another hole to patch up..."
+lightning_rod_appear,"The storm grows fierce! I need to adjust the lightning rod!"
+cannon_appear,"Skymoth incoming! The gun should already be loaded to fire."
+wheel_appear,"Almost there! But the wind is too rough, we'll crash into the rocks if we don't alter the course!"
+prologue_0,"Well, well, isn't it quite a predicament!
+
+Here I was, enjoying the company of myself on my private airship, but in the very next moment, poof! 
+
+A space-time anomaly."
+prologue_1,"Don't you just hate it when that happens.
+
+Well, the airship is going down pretty quickly at this point, so I'm in a bit of a rush to restock and repair all its systems just enough to last me through the ordeal."
+victory_0,"Magnificent! Nothing could stand in the way of my immeasurable awesomeness!
+
+The anomaly is finally left far behind, my airship is still somehow in one piece, and all that's left is—"
+victory_1,"Huh. So... all these clones won't be vanishing anytime soon? And ultimately we will need to battle each other for an undisputed supremacy over the airship?
+
+Well, well, isn't it quite a predicament!"

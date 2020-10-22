@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4" orientation="orthogonal" renderorder="right-down" width="87" height="46" tilewidth="32" tileheight="32" infinite="0" backgroundcolor="#363636" nextlayerid="5" nextobjectid="211">
+ <tileset firstgid="1" name="objs" tilewidth="1" tileheight="1" tilecount="0" columns="0"/>
+ <imagelayer id="4" name="Image Layer 1" locked="1">
+  <image source="ldship.png" width="2500" height="1250"/>
+ </imagelayer>
+ <objectgroup id="2" name="Collisions" visible="0" locked="1">
+  <object id="198" x="1648" y="398">
+   <polygon points="0,0 -10,7 -10,31 -20,28 -29,33 -32,106 -66,106 -66,48 -73,41 -102,41 -102,-40 -42,-40 -36,-44 -36,-74 -14,-74 -9,-71 -9,-64 -2,-57 28,-57 35,-64 34,-115 26,-121 -97,-121 -97,-163 -104,-170 -200,-170 -200,-216 -205,-222 -262,-222 -269,-216 -269,13 -257,25 -262,32 -262,42 -258,51 -248,60 -236,62 -223,61 -216,62 -212,69 -211,128 -223,133 -233,133 -242,128 -256,128 -260,131 -262,139 -261,154 -272,154 -283,165 -283,269 -272,281 -25,281 -16,274 -16,258 -11,253 25,252 34,244 35,7 24,-1"/>
+  </object>
+  <object id="199" x="1551" y="235">
+   <polygon points="0,0 23,0 24,-10 29,-16 37,-19 48,-19 55,-15 59,-6 59,4 61,12 67,15 86,15 91,13 104,13 112,18 116,28 116,35 123,42 0,42"/>
+  </object>
+  <object id="200" x="1226" y="713">
+   <polygon points="0,0 1,28 9,36 44,36 51,29 51,-30 55,-34 73,-34 82,-45 82,-151 72,-161 54,-161 54,-226 46,-234 24,-234 13,-223 13,-170 -165,-169 -173,-176 -173,-348 -166,-356 6,-356 12,-351 13,-298 21,-291 87,-291 97,-302 97,-406 87,-414 6,-414 6,-452 -7,-460 -77,-460 -87,-451 -87,-420 -90,-416 -187,-416 -192,-421 -192,-432 -306,-432 -315,-423 -314,-384 -324,-374 -323,-181 -315,-172 -315,-75 -306,-67 -216,-67 -202,-63 -153,-61 -95,-57 -91,-49 -53,-43 -43,-3"/>
+  </object>
+  <object id="201" x="716" y="290">
+   <polygon points="0,0 11,-10 129,-10 139,-1 139,122 132,130 9,130 0,122"/>
+  </object>
+  <object id="202" x="928" y="709">
+   <polygon points="0,0 6,-6 55,-6 61,1 60,111 68,120 294,120 300,113 300,103 304,97 417,98 426,84 435,77 445,74 451,74 451,65 456,61 489,61 492,64 507,64 511,61 555,61 555,58 558,54 585,53 590,47 621,46 621,29 651,29 651,11 655,7 698,6 704,11 704,22 706,27 706,113 553,143 323,162 106,167 -126,146 -98,69 -83,71 -39,72 -21,68 0,67"/>
+  </object>
+  <object id="203" x="1022" y="721" width="82" height="82">
+   <ellipse/>
+  </object>
+  <object id="204" x="1632" y="720">
+   <polygon points="0,0 6,5 47,5 55,-1 58,-14 58,-26 76,-41 100,-40 100,-97 110,-105 177,-105 177,-165 182,-171 228,-171 281,-169 315,-169 312,-306 268,-306 260,-253 244,-249 231,-249 231,-228 226,-219 118,-219 106,-230 108,-463 86,-471 63,-493 74,-512 78,-542 57,-544 40,-568 11,-586 -13,-585 -21,-585 -29,-600 -49,-600 -67,-581 -77,-581 -100,-588 -100,-650 -33,-645 125,-571 177,-494 405,-318 397,-149 263,-26 101,60 2,102 2,16 0,11"/>
+  </object>
+  <object id="205" x="1695" y="227">
+   <polygon points="0,0 -6,-5 -13,-5 -19,-9 -24,-17 -24,-28 -19,-35 -12,-38 0,-38 -6,-51 15,-49 11,-19"/>
+  </object>
+  <object id="206" x="1532" y="132">
+   <polygon points="0,0 -292,1 -299,7 -298,52 -314,64 -396,64 -400,57 -401,36 -425,38 -433,41 -434,62 -460,65 -495,65 -497,85 -508,92 -559,92 -564,89 -564,3 -587,3 -587,19 -594,25 -607,26 -619,26 -625,21 -635,9 -664,9 -665,18 -670,26 -686,28 -702,23 -710,12 -710,3 -730,3 -738,12 -738,85 -745,92 -811,92 -817,85 -817,67 -820,66 -1107,66 -1096,-4 -812,-24 -554,-49 -266,-58 0,-33"/>
+  </object>
+  <object id="207" x="1510" y="132">
+   <polygon points="0,0 5,8 5,22 9,28 16,31 28,31 36,27 40,20 45,7 22,0"/>
+  </object>
+  <object id="208" x="475" y="198">
+   <polygon points="0,0 0,59 21,55 176,58 185,70 184,208 175,222 141,223 133,216 108,216 103,230 94,232 44,232 44,241 32,244 32,260 46,268 46,298 121,298 132,297 140,291 144,279 306,279 319,291 320,366 325,371 363,370 376,381 376,468 364,478 298,478 289,470 289,444 280,444 276,440 276,428 266,423 266,393 254,397 227,398 220,402 220,429 209,436 195,435 195,469 185,477 100,477 92,470 93,399 83,393 34,394 33,453 37,458 37,529 43,535 345,535 354,544 355,580 327,657 39,611 -63,533 -62,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="Objects" offsetx="1.33333" offsety="0">
+  <object id="123" name="wheel" type="single" x="1863" y="380" width="143.667" height="170">
+   <properties>
+    <property name="appear_at" type="float" value="50"/>
+    <property name="damage" type="float" value="20"/>
+    <property name="decay" type="float" value="10"/>
+    <property name="recover_time" type="float" value="0.01"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="121" name="cannon" type="single" x="1550" y="116" width="186.667" height="160">
+   <properties>
+    <property name="appear_at" type="float" value="30"/>
+    <property name="damage" type="float" value="40"/>
+    <property name="decay" type="float" value="8"/>
+    <property name="recover_time" type="float" value="0.01"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="124" name="lightning_rod" type="single" x="1544.67" y="391" width="92" height="160">
+   <properties>
+    <property name="appear_at" type="float" value="20"/>
+    <property name="damage" type="float" value="30"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="0.01"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="119" name="gunpowder" type="single" x="828.667" y="737" width="97" height="74">
+   <properties>
+    <property name="damage" type="float" value="25"/>
+    <property name="decay" type="float" value="2"/>
+    <property name="recover_time" type="float" value="20"/>
+    <property name="start_at" type="float" value="80"/>
+   </properties>
+  </object>
+  <object id="187" name="gas_vent" type="passive" x="1376.67" y="738" width="201.003" height="69">
+   <properties>
+    <property name="damage" type="float" value="2"/>
+    <property name="decay" type="float" value="3"/>
+    <property name="recover_time" type="float" value="5"/>
+    <property name="start_at" type="float" value="90"/>
+   </properties>
+  </object>
+  <object id="188" name="water_pipe" type="passive" x="1031" y="102" width="103.667" height="131">
+   <properties>
+    <property name="damage" type="float" value="2"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="5"/>
+    <property name="start_at" type="float" value="80"/>
+   </properties>
+  </object>
+  <object id="189" name="exhaust" type="passive" x="420.667" y="198" width="145" height="115">
+   <properties>
+    <property name="damage" type="float" value="3"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="5"/>
+    <property name="start_at" type="float" value="90"/>
+   </properties>
+  </object>
+  <object id="192" name="pressure" type="passive" x="668" y="558" width="94.6667" height="110">
+   <properties>
+    <property name="damage" type="float" value="3"/>
+    <property name="decay" type="float" value="3"/>
+    <property name="recover_time" type="float" value="5"/>
+    <property name="start_at" type="float" value="100"/>
+   </properties>
+  </object>
+  <object id="122" name="balloon" type="passive" x="1384" y="422" width="111.667" height="129">
+   <properties>
+    <property name="damage" type="float" value="5"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="10"/>
+    <property name="start_at" type="float" value="90"/>
+   </properties>
+  </object>
+  <object id="118" name="engine" type="passive" x="447.667" y="401" width="159" height="95">
+   <properties>
+    <property name="damage" type="float" value="5"/>
+    <property name="decay" type="float" value="4"/>
+    <property name="recover_time" type="float" value="3"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="117" name="furnace" type="passive" x="429.667" y="591" width="138" height="57">
+   <properties>
+    <property name="damage" type="float" value="2"/>
+    <property name="decay" type="float" value="3"/>
+    <property name="recover_time" type="float" value="2"/>
+    <property name="start_at" type="float" value="30"/>
+   </properties>
+  </object>
+  <object id="116" name="tea" type="single" x="1094" y="773" width="56.6667" height="52">
+   <properties>
+    <property name="damage" type="float" value="0"/>
+    <property name="decay" type="float" value="0.09999999999999998"/>
+    <property name="recover_time" type="float" value="1"/>
+    <property name="start_at" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="120" name="hole" type="hole" x="832" y="137" width="105" height="72">
+   <properties>
+    <property name="appear_at" type="float" value="48"/>
+    <property name="damage" type="float" value="1"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="3"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="195" name="hole" type="hole" x="1740.67" y="556" width="68" height="59">
+   <properties>
+    <property name="appear_at" type="float" value="32"/>
+    <property name="damage" type="float" value="1"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="3"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="194" name="hole" type="hole" x="1231.67" y="133" width="116.997" height="72">
+   <properties>
+    <property name="appear_at" type="float" value="12"/>
+    <property name="damage" type="float" value="1"/>
+    <property name="decay" type="float" value="5"/>
+    <property name="recover_time" type="float" value="3"/>
+    <property name="start_at" type="float" value="50"/>
+   </properties>
+  </object>
+  <object id="193" name="debris" type="debris" x="1580.67" y="678" width="46" height="38">
+   <properties>
+    <property name="apear_at" type="float" value="0"/>
+    <property name="recover_time" type="float" value="2"/>
+    <property name="small" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="190" name="debris" type="debris" x="657" y="296" width="57" height="98">
+   <properties>
+    <property name="apear_at" type="float" value="0"/>
+    <property name="recover_time" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="196" name="debris" type="debris" x="853.667" y="296" width="57" height="98">
+   <properties>
+    <property name="apear_at" type="float" value="0"/>
+    <property name="recover_time" type="float" value="2"/>
+   </properties>
+  </object>
+  <object id="26" name="player" x="1151" y="447">
+   <properties>
+    <property name="count" type="int" value="5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="197" name="cam_center" x="1183" y="418">
+   <point/>
+  </object>
+  <object id="209" name="cam_left" x="832" y="276">
+   <point/>
+  </object>
+  <object id="210" name="cam_right" x="1523" y="287">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

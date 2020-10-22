@@ -1,0 +1,8 @@
+common.hxml
+--debug
+-lib hlsdl
+# is broken
+# -lib hlimgui
+-D heaps_enable_hl_mp3
+
+-hl game.hl

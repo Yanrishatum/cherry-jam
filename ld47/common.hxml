@@ -1,0 +1,17 @@
+-cp src
+
+-lib heeps
+-lib deepnightlibs
+-lib castle
+-lib stb_ogg_sound
+-lib differ
+-lib format-tiled
+-lib hxgeomalgo
+
+-D windowSize=1280x720
+
+-D heaps_enable_hl_mp3
+-D fancy_missing
+# -D test_loader
+
+-main Main
